@@ -25,7 +25,7 @@
               <td>{{ project.title }}</td>
               <td>{{ project.completed }}</td>
               <td>
-                <RouterLink to="/" class="btn btn-success float-end">Edit</RouterLink>
+                <RouterLink :to="{path:'/project/'+project.id+'/edit'}" class="btn btn-success float-end">Edit</RouterLink>
                 <button type="button" class="btn btn-danger float-end">Delete</button>
               </td>
             </tr>
